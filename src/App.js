@@ -7,12 +7,12 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {reducer, initialState} from './reducer';
 import SplashScreen from './screen/splash/SplashScreen';
-import AuthContext from 'mbk_app/utils/AuthContext';
-import BaseUrl from 'mbk_app/constants/BaseUrl';
+import AuthContext from 'src/utils/AuthContext';
+import BaseUrl from 'src/constants/BaseUrl';
 import Snackbar from 'react-native-snackbar';
-import {AppNavigator} from 'mbk_app/routes/MainStackNavigator';
+import {AppNavigator} from 'src/routes/MainStackNavigator';
 import {request} from './helper/request';
-import {AuthNavigator} from 'mbk_app/routes/AuthStackNavigator';
+import {AuthNavigator} from 'src/routes/AuthStackNavigator';
 
 const Stack = createStackNavigator();
 

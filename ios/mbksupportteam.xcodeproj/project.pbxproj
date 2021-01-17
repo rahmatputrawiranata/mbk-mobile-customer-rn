@@ -7,19 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		00E356F31AD99517003FC87E /* mbksupportteamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mbksupportteamTests.m */; };
-		120C419C1C370A1C8B60660D /* libPods-mbksupportteam-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DC89EBA7E8334C97BB1E3A /* libPods-mbksupportteam-tvOSTests.a */; };
+		00E356F31AD99517003FC87E /* mbsupportcustomerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mbsupportcustomerTests.m */; };
+		120C419C1C370A1C8B60660D /* libPods-mbsupportcustomer-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DC89EBA7E8334C97BB1E3A /* libPods-mbsupportcustomer-tvOSTests.a */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		1BD2B87212C152947C79FE9B /* libPods-mbksupportteam.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E329A399246A4C2A19FB78 /* libPods-mbksupportteam.a */; };
+		1BD2B87212C152947C79FE9B /* libPods-mbsupportcustomer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9E329A399246A4C2A19FB78 /* libPods-mbsupportcustomer.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		2DCD954D1E0B4F2C00145EB5 /* mbksupportteamTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mbksupportteamTests.m */; };
-		3074053A2053C5ADC083E5E7 /* libPods-mbksupportteam-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DCFC6A478A312A00CC1673 /* libPods-mbksupportteam-tvOS.a */; };
-		AD0AAB6E3ED10B9AB79470C9 /* libPods-mbksupportteam-mbksupportteamTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF38318676A7DA95EC351A4 /* libPods-mbksupportteam-mbksupportteamTests.a */; };
+		2DCD954D1E0B4F2C00145EB5 /* mbsupportcustomerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* mbsupportcustomerTests.m */; };
+		3074053A2053C5ADC083E5E7 /* libPods-mbsupportcustomer-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F2DCFC6A478A312A00CC1673 /* libPods-mbsupportcustomer-tvOS.a */; };
+		AD0AAB6E3ED10B9AB79470C9 /* libPods-mbsupportcustomer-mbsupportcustomerTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DCF38318676A7DA95EC351A4 /* libPods-mbsupportcustomer-mbsupportcustomerTests.a */; };
 		5B495E14A5E44B499D9767EB /* Poppins-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E06F615C467C4B4F9FD1F331 /* Poppins-Black.ttf */; };
 		F3ADAEE8402E44DA87043C6F /* Poppins-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5848CB4BE9364B22BD5ECB70 /* Poppins-BlackItalic.ttf */; };
 		221DB992137E40F2A1C6EA99 /* Poppins-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43C1AE69401747CDABB0225B /* Poppins-Bold.ttf */; };
@@ -46,45 +46,45 @@
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 13B07F861A680F5B00A75B9A;
-			remoteInfo = mbksupportteam;
+			remoteInfo = mbsupportcustomer;
 		};
 		2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 83CBB9F71A601CBA00E9B192 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 2D02E47A1E0B4A5D006451C7;
-			remoteInfo = "mbksupportteam-tvOS";
+			remoteInfo = "mbsupportcustomer-tvOS";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
-		00E356EE1AD99517003FC87E /* mbksupportteamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mbksupportteamTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		00E356EE1AD99517003FC87E /* mbsupportcustomerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = mbsupportcustomerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		00E356F21AD99517003FC87E /* mbksupportteamTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mbksupportteamTests.m; sourceTree = "<group>"; };
-		13B07F961A680F5B00A75B9A /* mbksupportteam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mbksupportteam.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = mbksupportteam/AppDelegate.h; sourceTree = "<group>"; };
-		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = mbksupportteam/AppDelegate.m; sourceTree = "<group>"; };
+		00E356F21AD99517003FC87E /* mbsupportcustomerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = mbsupportcustomerTests.m; sourceTree = "<group>"; };
+		13B07F961A680F5B00A75B9A /* mbsupportcustomer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mbsupportcustomer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = mbsupportcustomer/AppDelegate.h; sourceTree = "<group>"; };
+		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = mbsupportcustomer/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB21A68108700A75B9A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = mbksupportteam/Images.xcassets; sourceTree = "<group>"; };
-		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = mbksupportteam/Info.plist; sourceTree = "<group>"; };
-		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = mbksupportteam/main.m; sourceTree = "<group>"; };
-		2D02E47B1E0B4A5D006451C7 /* mbksupportteam-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mbksupportteam-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2D02E4901E0B4A5D006451C7 /* mbksupportteam-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mbksupportteam-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		329B26A0D0FEC8BE4EF2C73A /* Pods-mbksupportteam-mbksupportteamTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbksupportteam-mbksupportteamTests.debug.xcconfig"; path = "Target Support Files/Pods-mbksupportteam-mbksupportteamTests/Pods-mbksupportteam-mbksupportteamTests.debug.xcconfig"; sourceTree = "<group>"; };
-		32D77917ACDF691EB5C68EDF /* Pods-mbksupportteam-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbksupportteam-tvOS.release.xcconfig"; path = "Target Support Files/Pods-mbksupportteam-tvOS/Pods-mbksupportteam-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		43DC89EBA7E8334C97BB1E3A /* libPods-mbksupportteam-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mbksupportteam-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		58D79F68BF7F666E3C05838C /* Pods-mbksupportteam.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbksupportteam.release.xcconfig"; path = "Target Support Files/Pods-mbksupportteam/Pods-mbksupportteam.release.xcconfig"; sourceTree = "<group>"; };
-		82B483D849225E28A343E8BE /* Pods-mbksupportteam-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbksupportteam-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-mbksupportteam-tvOS/Pods-mbksupportteam-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		8E3AE3128F0A538BE771A385 /* Pods-mbksupportteam-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbksupportteam-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-mbksupportteam-tvOSTests/Pods-mbksupportteam-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		9D837132C1D385D5C510A8B5 /* Pods-mbksupportteam-mbksupportteamTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbksupportteam-mbksupportteamTests.release.xcconfig"; path = "Target Support Files/Pods-mbksupportteam-mbksupportteamTests/Pods-mbksupportteam-mbksupportteamTests.release.xcconfig"; sourceTree = "<group>"; };
-		B9E329A399246A4C2A19FB78 /* libPods-mbksupportteam.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mbksupportteam.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		C40749350430DDD1D6D65BE2 /* Pods-mbksupportteam-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbksupportteam-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-mbksupportteam-tvOSTests/Pods-mbksupportteam-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		DCF38318676A7DA95EC351A4 /* libPods-mbksupportteam-mbksupportteamTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mbksupportteam-mbksupportteamTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = mbsupportcustomer/Images.xcassets; sourceTree = "<group>"; };
+		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = mbsupportcustomer/Info.plist; sourceTree = "<group>"; };
+		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = mbsupportcustomer/main.m; sourceTree = "<group>"; };
+		2D02E47B1E0B4A5D006451C7 /* mbsupportcustomer-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "mbsupportcustomer-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2D02E4901E0B4A5D006451C7 /* mbsupportcustomer-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "mbsupportcustomer-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		329B26A0D0FEC8BE4EF2C73A /* Pods-mbsupportcustomer-mbsupportcustomerTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbsupportcustomer-mbsupportcustomerTests.debug.xcconfig"; path = "Target Support Files/Pods-mbsupportcustomer-mbsupportcustomerTests/Pods-mbsupportcustomer-mbsupportcustomerTests.debug.xcconfig"; sourceTree = "<group>"; };
+		32D77917ACDF691EB5C68EDF /* Pods-mbsupportcustomer-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbsupportcustomer-tvOS.release.xcconfig"; path = "Target Support Files/Pods-mbsupportcustomer-tvOS/Pods-mbsupportcustomer-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		43DC89EBA7E8334C97BB1E3A /* libPods-mbsupportcustomer-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mbsupportcustomer-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		58D79F68BF7F666E3C05838C /* Pods-mbsupportcustomer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbsupportcustomer.release.xcconfig"; path = "Target Support Files/Pods-mbsupportcustomer/Pods-mbsupportcustomer.release.xcconfig"; sourceTree = "<group>"; };
+		82B483D849225E28A343E8BE /* Pods-mbsupportcustomer-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbsupportcustomer-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-mbsupportcustomer-tvOS/Pods-mbsupportcustomer-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		8E3AE3128F0A538BE771A385 /* Pods-mbsupportcustomer-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbsupportcustomer-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-mbsupportcustomer-tvOSTests/Pods-mbsupportcustomer-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		9D837132C1D385D5C510A8B5 /* Pods-mbsupportcustomer-mbsupportcustomerTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbsupportcustomer-mbsupportcustomerTests.release.xcconfig"; path = "Target Support Files/Pods-mbsupportcustomer-mbsupportcustomerTests/Pods-mbsupportcustomer-mbsupportcustomerTests.release.xcconfig"; sourceTree = "<group>"; };
+		B9E329A399246A4C2A19FB78 /* libPods-mbsupportcustomer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mbsupportcustomer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C40749350430DDD1D6D65BE2 /* Pods-mbsupportcustomer-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbsupportcustomer-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-mbsupportcustomer-tvOSTests/Pods-mbsupportcustomer-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		DCF38318676A7DA95EC351A4 /* libPods-mbsupportcustomer-mbsupportcustomerTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mbsupportcustomer-mbsupportcustomerTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		F2DCFC6A478A312A00CC1673 /* libPods-mbksupportteam-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mbksupportteam-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F795002017165E8139AC41D0 /* Pods-mbksupportteam.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbksupportteam.debug.xcconfig"; path = "Target Support Files/Pods-mbksupportteam/Pods-mbksupportteam.debug.xcconfig"; sourceTree = "<group>"; };
+		F2DCFC6A478A312A00CC1673 /* libPods-mbsupportcustomer-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-mbsupportcustomer-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F795002017165E8139AC41D0 /* Pods-mbsupportcustomer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-mbsupportcustomer.debug.xcconfig"; path = "Target Support Files/Pods-mbsupportcustomer/Pods-mbsupportcustomer.debug.xcconfig"; sourceTree = "<group>"; };
 		E06F615C467C4B4F9FD1F331 /* Poppins-Black.ttf */ = {isa = PBXFileReference; name = "Poppins-Black.ttf"; path = "../src/assets/fonts/Poppins-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		5848CB4BE9364B22BD5ECB70 /* Poppins-BlackItalic.ttf */ = {isa = PBXFileReference; name = "Poppins-BlackItalic.ttf"; path = "../src/assets/fonts/Poppins-BlackItalic.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		43C1AE69401747CDABB0225B /* Poppins-Bold.ttf */ = {isa = PBXFileReference; name = "Poppins-Bold.ttf"; path = "../src/assets/fonts/Poppins-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
@@ -110,7 +110,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AD0AAB6E3ED10B9AB79470C9 /* libPods-mbksupportteam-mbksupportteamTests.a in Frameworks */,
+				AD0AAB6E3ED10B9AB79470C9 /* libPods-mbsupportcustomer-mbsupportcustomerTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,7 +118,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1BD2B87212C152947C79FE9B /* libPods-mbksupportteam.a in Frameworks */,
+				1BD2B87212C152947C79FE9B /* libPods-mbsupportcustomer.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +126,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3074053A2053C5ADC083E5E7 /* libPods-mbksupportteam-tvOS.a in Frameworks */,
+				3074053A2053C5ADC083E5E7 /* libPods-mbsupportcustomer-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -134,20 +134,20 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				120C419C1C370A1C8B60660D /* libPods-mbksupportteam-tvOSTests.a in Frameworks */,
+				120C419C1C370A1C8B60660D /* libPods-mbsupportcustomer-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		00E356EF1AD99517003FC87E /* mbksupportteamTests */ = {
+		00E356EF1AD99517003FC87E /* mbsupportcustomerTests */ = {
 			isa = PBXGroup;
 			children = (
-				00E356F21AD99517003FC87E /* mbksupportteamTests.m */,
+				00E356F21AD99517003FC87E /* mbsupportcustomerTests.m */,
 				00E356F01AD99517003FC87E /* Supporting Files */,
 			);
-			path = mbksupportteamTests;
+			path = mbsupportcustomerTests;
 			sourceTree = "<group>";
 		};
 		00E356F01AD99517003FC87E /* Supporting Files */ = {
@@ -158,7 +158,7 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		13B07FAE1A68108700A75B9A /* mbksupportteam */ = {
+		13B07FAE1A68108700A75B9A /* mbsupportcustomer */ = {
 			isa = PBXGroup;
 			children = (
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
@@ -169,7 +169,7 @@
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
-			name = mbksupportteam;
+			name = mbsupportcustomer;
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -177,10 +177,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				B9E329A399246A4C2A19FB78 /* libPods-mbksupportteam.a */,
-				DCF38318676A7DA95EC351A4 /* libPods-mbksupportteam-mbksupportteamTests.a */,
-				F2DCFC6A478A312A00CC1673 /* libPods-mbksupportteam-tvOS.a */,
-				43DC89EBA7E8334C97BB1E3A /* libPods-mbksupportteam-tvOSTests.a */,
+				B9E329A399246A4C2A19FB78 /* libPods-mbsupportcustomer.a */,
+				DCF38318676A7DA95EC351A4 /* libPods-mbsupportcustomer-mbsupportcustomerTests.a */,
+				F2DCFC6A478A312A00CC1673 /* libPods-mbsupportcustomer-tvOS.a */,
+				43DC89EBA7E8334C97BB1E3A /* libPods-mbsupportcustomer-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -188,14 +188,14 @@
 		6F0F87A0D0E3E3EC3C3A18AF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				F795002017165E8139AC41D0 /* Pods-mbksupportteam.debug.xcconfig */,
-				58D79F68BF7F666E3C05838C /* Pods-mbksupportteam.release.xcconfig */,
-				329B26A0D0FEC8BE4EF2C73A /* Pods-mbksupportteam-mbksupportteamTests.debug.xcconfig */,
-				9D837132C1D385D5C510A8B5 /* Pods-mbksupportteam-mbksupportteamTests.release.xcconfig */,
-				82B483D849225E28A343E8BE /* Pods-mbksupportteam-tvOS.debug.xcconfig */,
-				32D77917ACDF691EB5C68EDF /* Pods-mbksupportteam-tvOS.release.xcconfig */,
-				8E3AE3128F0A538BE771A385 /* Pods-mbksupportteam-tvOSTests.debug.xcconfig */,
-				C40749350430DDD1D6D65BE2 /* Pods-mbksupportteam-tvOSTests.release.xcconfig */,
+				F795002017165E8139AC41D0 /* Pods-mbsupportcustomer.debug.xcconfig */,
+				58D79F68BF7F666E3C05838C /* Pods-mbsupportcustomer.release.xcconfig */,
+				329B26A0D0FEC8BE4EF2C73A /* Pods-mbsupportcustomer-mbsupportcustomerTests.debug.xcconfig */,
+				9D837132C1D385D5C510A8B5 /* Pods-mbsupportcustomer-mbsupportcustomerTests.release.xcconfig */,
+				82B483D849225E28A343E8BE /* Pods-mbsupportcustomer-tvOS.debug.xcconfig */,
+				32D77917ACDF691EB5C68EDF /* Pods-mbsupportcustomer-tvOS.release.xcconfig */,
+				8E3AE3128F0A538BE771A385 /* Pods-mbsupportcustomer-tvOSTests.debug.xcconfig */,
+				C40749350430DDD1D6D65BE2 /* Pods-mbsupportcustomer-tvOSTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -211,9 +211,9 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				13B07FAE1A68108700A75B9A /* mbksupportteam */,
+				13B07FAE1A68108700A75B9A /* mbsupportcustomer */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
-				00E356EF1AD99517003FC87E /* mbksupportteamTests */,
+				00E356EF1AD99517003FC87E /* mbsupportcustomerTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				6F0F87A0D0E3E3EC3C3A18AF /* Pods */,
@@ -227,10 +227,10 @@
 		83CBBA001A601CBA00E9B192 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				13B07F961A680F5B00A75B9A /* mbksupportteam.app */,
-				00E356EE1AD99517003FC87E /* mbksupportteamTests.xctest */,
-				2D02E47B1E0B4A5D006451C7 /* mbksupportteam-tvOS.app */,
-				2D02E4901E0B4A5D006451C7 /* mbksupportteam-tvOSTests.xctest */,
+				13B07F961A680F5B00A75B9A /* mbsupportcustomer.app */,
+				00E356EE1AD99517003FC87E /* mbsupportcustomerTests.xctest */,
+				2D02E47B1E0B4A5D006451C7 /* mbsupportcustomer-tvOS.app */,
+				2D02E4901E0B4A5D006451C7 /* mbsupportcustomer-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -264,9 +264,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		00E356ED1AD99517003FC87E /* mbksupportteamTests */ = {
+		00E356ED1AD99517003FC87E /* mbsupportcustomerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "mbksupportteamTests" */;
+			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "mbsupportcustomerTests" */;
 			buildPhases = (
 				A29A61DB5A6366F9C92D62B8 /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
@@ -278,14 +278,14 @@
 			dependencies = (
 				00E356F51AD99517003FC87E /* PBXTargetDependency */,
 			);
-			name = mbksupportteamTests;
-			productName = mbksupportteamTests;
-			productReference = 00E356EE1AD99517003FC87E /* mbksupportteamTests.xctest */;
+			name = mbsupportcustomerTests;
+			productName = mbsupportcustomerTests;
+			productReference = 00E356EE1AD99517003FC87E /* mbsupportcustomerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		13B07F861A680F5B00A75B9A /* mbksupportteam */ = {
+		13B07F861A680F5B00A75B9A /* mbsupportcustomer */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "mbksupportteam" */;
+			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "mbsupportcustomer" */;
 			buildPhases = (
 				0B9A86E1CABF7AB24078E401 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
@@ -298,14 +298,14 @@
 			);
 			dependencies = (
 			);
-			name = mbksupportteam;
-			productName = mbksupportteam;
-			productReference = 13B07F961A680F5B00A75B9A /* mbksupportteam.app */;
+			name = mbsupportcustomer;
+			productName = mbsupportcustomer;
+			productReference = 13B07F961A680F5B00A75B9A /* mbsupportcustomer.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E47A1E0B4A5D006451C7 /* mbksupportteam-tvOS */ = {
+		2D02E47A1E0B4A5D006451C7 /* mbsupportcustomer-tvOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "mbksupportteam-tvOS" */;
+			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "mbsupportcustomer-tvOS" */;
 			buildPhases = (
 				E8462E9F3E39BC5F23E425FC /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
@@ -318,14 +318,14 @@
 			);
 			dependencies = (
 			);
-			name = "mbksupportteam-tvOS";
-			productName = "mbksupportteam-tvOS";
-			productReference = 2D02E47B1E0B4A5D006451C7 /* mbksupportteam-tvOS.app */;
+			name = "mbsupportcustomer-tvOS";
+			productName = "mbsupportcustomer-tvOS";
+			productReference = 2D02E47B1E0B4A5D006451C7 /* mbsupportcustomer-tvOS.app */;
 			productType = "com.apple.product-type.application";
 		};
-		2D02E48F1E0B4A5D006451C7 /* mbksupportteam-tvOSTests */ = {
+		2D02E48F1E0B4A5D006451C7 /* mbsupportcustomer-tvOSTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "mbksupportteam-tvOSTests" */;
+			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "mbsupportcustomer-tvOSTests" */;
 			buildPhases = (
 				B5B903EDBEB85EB78038D7BB /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
@@ -337,9 +337,9 @@
 			dependencies = (
 				2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */,
 			);
-			name = "mbksupportteam-tvOSTests";
-			productName = "mbksupportteam-tvOSTests";
-			productReference = 2D02E4901E0B4A5D006451C7 /* mbksupportteam-tvOSTests.xctest */;
+			name = "mbsupportcustomer-tvOSTests";
+			productName = "mbsupportcustomer-tvOSTests";
+			productReference = 2D02E4901E0B4A5D006451C7 /* mbsupportcustomer-tvOSTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -368,7 +368,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "mbksupportteam" */;
+			buildConfigurationList = 83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "mbsupportcustomer" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -381,10 +381,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				13B07F861A680F5B00A75B9A /* mbksupportteam */,
-				00E356ED1AD99517003FC87E /* mbksupportteamTests */,
-				2D02E47A1E0B4A5D006451C7 /* mbksupportteam-tvOS */,
-				2D02E48F1E0B4A5D006451C7 /* mbksupportteam-tvOSTests */,
+				13B07F861A680F5B00A75B9A /* mbsupportcustomer */,
+				00E356ED1AD99517003FC87E /* mbsupportcustomerTests */,
+				2D02E47A1E0B4A5D006451C7 /* mbsupportcustomer-tvOS */,
+				2D02E48F1E0B4A5D006451C7 /* mbsupportcustomer-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -471,7 +471,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-mbksupportteam-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-mbsupportcustomer-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -507,7 +507,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-mbksupportteam-mbksupportteamTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-mbsupportcustomer-mbsupportcustomerTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -529,7 +529,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-mbksupportteam-tvOSTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-mbsupportcustomer-tvOSTests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -551,7 +551,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-mbksupportteam-tvOS-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-mbsupportcustomer-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -603,7 +603,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				00E356F31AD99517003FC87E /* mbksupportteamTests.m in Sources */,
+				00E356F31AD99517003FC87E /* mbsupportcustomerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -629,7 +629,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2DCD954D1E0B4F2C00145EB5 /* mbksupportteamTests.m in Sources */,
+				2DCD954D1E0B4F2C00145EB5 /* mbsupportcustomerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -638,12 +638,12 @@
 /* Begin PBXTargetDependency section */
 		00E356F51AD99517003FC87E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 13B07F861A680F5B00A75B9A /* mbksupportteam */;
+			target = 13B07F861A680F5B00A75B9A /* mbsupportcustomer */;
 			targetProxy = 00E356F41AD99517003FC87E /* PBXContainerItemProxy */;
 		};
 		2D02E4921E0B4A5D006451C7 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 2D02E47A1E0B4A5D006451C7 /* mbksupportteam-tvOS */;
+			target = 2D02E47A1E0B4A5D006451C7 /* mbsupportcustomer-tvOS */;
 			targetProxy = 2D02E4911E0B4A5D006451C7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -655,7 +655,7 @@
 				13B07FB21A68108700A75B9A /* Base */,
 			);
 			name = LaunchScreen.xib;
-			path = mbksupportteam;
+			path = mbsupportcustomer;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -663,14 +663,14 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 329B26A0D0FEC8BE4EF2C73A /* Pods-mbksupportteam-mbksupportteamTests.debug.xcconfig */;
+			baseConfigurationReference = 329B26A0D0FEC8BE4EF2C73A /* Pods-mbsupportcustomer-mbsupportcustomerTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = mbksupportteamTests/Info.plist;
+				INFOPLIST_FILE = mbsupportcustomerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -680,17 +680,17 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mbksupportteam.app/mbksupportteam";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mbsupportcustomer.app/mbsupportcustomer";
 			};
 			name = Debug;
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9D837132C1D385D5C510A8B5 /* Pods-mbksupportteam-mbksupportteamTests.release.xcconfig */;
+			baseConfigurationReference = 9D837132C1D385D5C510A8B5 /* Pods-mbsupportcustomer-mbsupportcustomerTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
-				INFOPLIST_FILE = mbksupportteamTests/Info.plist;
+				INFOPLIST_FILE = mbsupportcustomerTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
@@ -700,13 +700,13 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mbksupportteam.app/mbksupportteam";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mbsupportcustomer.app/mbsupportcustomer";
 			};
 			name = Release;
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F795002017165E8139AC41D0 /* Pods-mbksupportteam.debug.xcconfig */;
+			baseConfigurationReference = F795002017165E8139AC41D0 /* Pods-mbsupportcustomer.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -716,7 +716,7 @@
 					"$(inherited)",
 					"FB_SONARKIT_ENABLED=1",
 				);
-				INFOPLIST_FILE = mbksupportteam/Info.plist;
+				INFOPLIST_FILE = mbsupportcustomer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -724,7 +724,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = mbksupportteam;
+				PRODUCT_NAME = mbsupportcustomer;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -733,12 +733,12 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 58D79F68BF7F666E3C05838C /* Pods-mbksupportteam.release.xcconfig */;
+			baseConfigurationReference = 58D79F68BF7F666E3C05838C /* Pods-mbsupportcustomer.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CURRENT_PROJECT_VERSION = 1;
-				INFOPLIST_FILE = mbksupportteam/Info.plist;
+				INFOPLIST_FILE = mbsupportcustomer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -746,7 +746,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = mbksupportteam;
+				PRODUCT_NAME = mbsupportcustomer;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -754,7 +754,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 82B483D849225E28A343E8BE /* Pods-mbksupportteam-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 82B483D849225E28A343E8BE /* Pods-mbsupportcustomer-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -765,14 +765,14 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "mbksupportteam-tvOS/Info.plist";
+				INFOPLIST_FILE = "mbsupportcustomer-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.mbksupportteam-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.mbsupportcustomer-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -782,7 +782,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 32D77917ACDF691EB5C68EDF /* Pods-mbksupportteam-tvOS.release.xcconfig */;
+			baseConfigurationReference = 32D77917ACDF691EB5C68EDF /* Pods-mbsupportcustomer-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -793,14 +793,14 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "mbksupportteam-tvOS/Info.plist";
+				INFOPLIST_FILE = "mbsupportcustomer-tvOS/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.mbksupportteam-tvOS";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.mbsupportcustomer-tvOS";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
 				TARGETED_DEVICE_FAMILY = 3;
@@ -810,7 +810,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8E3AE3128F0A538BE771A385 /* Pods-mbksupportteam-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = 8E3AE3128F0A538BE771A385 /* Pods-mbsupportcustomer-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -820,24 +820,24 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_TESTABILITY = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "mbksupportteam-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "mbsupportcustomer-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.mbksupportteam-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.mbsupportcustomer-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mbksupportteam-tvOS.app/mbksupportteam-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mbsupportcustomer-tvOS.app/mbsupportcustomer-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Debug;
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C40749350430DDD1D6D65BE2 /* Pods-mbksupportteam-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = C40749350430DDD1D6D65BE2 /* Pods-mbsupportcustomer-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -847,17 +847,17 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "mbksupportteam-tvOSTests/Info.plist";
+				INFOPLIST_FILE = "mbsupportcustomer-tvOSTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
 					"-lc++",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.mbksupportteam-tvOSTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.mbsupportcustomer-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = appletvos;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mbksupportteam-tvOS.app/mbksupportteam-tvOS";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/mbsupportcustomer-tvOS.app/mbsupportcustomer-tvOS";
 				TVOS_DEPLOYMENT_TARGET = 10.1;
 			};
 			name = Release;
@@ -978,7 +978,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "mbksupportteamTests" */ = {
+		00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "mbsupportcustomerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				00E356F61AD99517003FC87E /* Debug */,
@@ -987,7 +987,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "mbksupportteam" */ = {
+		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "mbsupportcustomer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				13B07F941A680F5B00A75B9A /* Debug */,
@@ -996,7 +996,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "mbksupportteam-tvOS" */ = {
+		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "mbsupportcustomer-tvOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4971E0B4A5E006451C7 /* Debug */,
@@ -1005,7 +1005,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "mbksupportteam-tvOSTests" */ = {
+		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "mbsupportcustomer-tvOSTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2D02E4991E0B4A5E006451C7 /* Debug */,
@@ -1014,7 +1014,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "mbksupportteam" */ = {
+		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "mbsupportcustomer" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				83CBBA201A601CBA00E9B192 /* Debug */,

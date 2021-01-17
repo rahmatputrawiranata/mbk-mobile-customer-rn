@@ -1,10 +1,10 @@
 import React from 'react';
 import {View, Text, Dimensions, StyleSheet, Image} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import {ButtonComponent} from 'mbk_app/component/ButtonComponent';
-import {TextInputComponent} from 'mbk_app/component/forms/TextInputComponent';
+import {ButtonComponent} from 'src/component/ButtonComponent';
+import {TextInputComponent} from 'src/component/forms/TextInputComponent';
 const screen = Dimensions.get('window');
-import AuthContext from 'mbk_app/utils/AuthContext';
+import AuthContext from 'src/utils/AuthContext';
 
 export const LoginScreen = ({navigation}) => {
   const [userName, onChangeUsernmae] = React.useState('');
@@ -24,7 +24,7 @@ export const LoginScreen = ({navigation}) => {
       <View style={styles.container}>
         <View style={styles.logoWrapper}>
           <Image
-            source={require('mbk_app/assets/images/logo.png')}
+            source={require('src/assets/images/logo.png')}
             style={styles.logo}
             resizeMode="contain"
           />

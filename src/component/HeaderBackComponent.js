@@ -1,7 +1,7 @@
 import React from 'react';
 import {Icon, TopNavigation, TopNavigationAction} from '@ui-kitten/components';
 import {Text} from 'react-native';
-import Color from 'mbk_app/constants/Color';
+import Color from 'src/constants/Color';
 
 const BackIcon = (props) => (
   <Icon {...props} fill={Color.primary} name="arrow-back" />

@@ -8,7 +8,7 @@ import {
   Image,
 } from 'react-native';
 import Color from '../../constants/Color';
-import IconMenuComponent from 'mbk_app/component/IconMenuComponent';
+import IconMenuComponent from 'src/component/IconMenuComponent';
 
 const screen = Dimensions.get('window');
 
@@ -26,7 +26,7 @@ export const HomeScreen = ({navigation}) => {
   };
 
   const navigateCreateReport = () => {
-    navigation.navigate('CreateReport');
+    navigation.navigate('CreateReportNavigator');
   };
 
   return (
@@ -41,7 +41,7 @@ export const HomeScreen = ({navigation}) => {
           <Image
             style={styles.imageBanner}
             resizeMode="contain"
-            source={require('mbk_app/assets/images/home.png')}
+            source={require('src/assets/images/home.png')}
           />
         </View>
         <View style={styles.banner} />

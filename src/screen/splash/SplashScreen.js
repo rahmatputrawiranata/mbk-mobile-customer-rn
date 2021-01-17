@@ -6,7 +6,7 @@ export default () => {
       <View style={styles.imageWrapper}>
         <Image
           style={styles.image}
-          source={require('mbk_app/assets/images/logo.png')}
+          source={require('src/assets/images/logo.png')}
           resizeMode="contain"
         />
       </View>

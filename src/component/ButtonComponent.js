@@ -1,6 +1,6 @@
 import React from 'react';
 import {TouchableWithoutFeedback, Text, View, StyleSheet} from 'react-native';
-import Color from 'mbk_app/constants/Color';
+import Color from 'src/constants/Color';
 
 export const ButtonComponent = (props) => (
   <TouchableWithoutFeedback onPress={props.onPress}>

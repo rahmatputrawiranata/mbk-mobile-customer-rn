@@ -1,106 +1,99 @@
 import React from 'react';
-import {Text, View, StyleSheet, Modal, Alert} from 'react-native';
+import {Text, View, StyleSheet, Alert} from 'react-native';
 import {HeaderBackComponent} from 'src/component/HeaderBackComponent';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {PageWrapperComponent} from 'src/component/PageWrapperComponent';
 import {ButtonComponent} from 'src/component/ButtonComponent';
 import Color from 'src/constants/Color';
-import {TextInputComponent} from 'src/component/forms/TextInputComponent';
-import {RNCamera} from 'react-native-camera';
 import {request} from 'src/helper/request';
 import {LoadingComponent} from 'src/component/LoadingComponent';
 import {CardComponent} from 'src/component/CardComponent';
-import Snackbar from 'react-native-snackbar';
 
-export const CreateReportScreen = ({navigation}) => {
-  const [deviceId, setDeviceId] = React.useState('');
-  const [isCameraActive, setIsCameraActive] = React.useState(false);
+export const SetProblemScreen = ({route, navigation}) => {
   const [isLoading, setIsLoading] = React.useState(false);
-  const [isFocused, setIsFocused] = React.useState(false);
   const [deviceData, setDeviceData] = React.useState(null);
 
   const navigateBack = () => {
     navigation.goBack();
   };
 
-  const navigateToSetUpReport = () => {
-    navigation.navigate('SetProblem', {
-      device_code: deviceData.device_code,
-    });
-  };
+  const {device_code} = route.params;
+
+  const navigateBacks = React.useCallback(() => {
+    navigation.goBack();
+  }, [navigation]);
+
+  React.useEffect(() => {
+    async function initData() {
+      setIsLoading(true);
+      request(
+        '/report/check-device',
+        'POST',
+        JSON.stringify({
+          device_code: device_code,
+        }),
+      )
+        .then((response) => {
+          setDeviceData(response.data);
+          setIsLoading(false);
+        })
+        .catch((err) => {
+          console.log(err);
+          Alert.alert(
+            'Device Code Not Valid',
+            'Please use registered device',
+            [
+              {
+                text: 'Back To Scanner',
+                onPress: navigateBacks,
+              },
+            ],
+            {cancelable: false},
+          );
+        });
+    }
+    initData();
+  }, [device_code, navigateBacks]);
 
   const checkDevice = async () => {
-    if(!deviceId) {
-      return Snackbar.show({
-        text: 'please fill device id',
-        duration: Snackbar.LENGTH_SHORT,
-        backgroundColor: 'red',
-      });
-    }
     setIsLoading(true);
     request(
       '/report/check-device',
       'POST',
       JSON.stringify({
-        device_code: deviceId,
+        device_code: device_code,
       }),
     )
       .then((response) => {
-        console.log(response);
         setDeviceData(response.data);
         setIsLoading(false);
       })
       .catch((err) => {
         console.log(err);
-        setDeviceData(null);
-        setIsLoading(false);
-        return Snackbar.show({
-          text: err.message,
-          duration: Snackbar.LENGTH_SHORT,
-          backgroundColor: 'red',
-        });
-      });
-  };
-
-  const onBarcodeDetected = (e) => {
-    console.log(e);
-    if (!isFocused) {
-      setIsFocused(true);
-      Alert.alert(
-        'Your Barcode',
-        'Barcode Data ' + e.data,
-        [
-          {
-            text: 'Cancel',
-            onPress: () => setIsFocused(false),
-          },
-          {
-            text: 'Process Data',
-            onPress: () => {
-              setIsFocused(false);
-              setIsCameraActive(false);
-              setDeviceId(e.data);
+        Alert.alert(
+          'Device Code Not Valid',
+          'Please use registered device',
+          [
+            {
+              text: 'Back To Scanner',
+              onPress: navigateBack,
             },
-          },
-        ],
-        {cancelable: false},
-      );
-    }
+          ],
+          {cancelable: false},
+        );
+      });
   };
 
   return (
     <SafeAreaView style={styles.wrapper}>
-      <HeaderBackComponent title="Check Device" navigateBack={navigateBack} />
+      <HeaderBackComponent
+        title="Set Up Device Problem"
+        navigateBack={navigateBack}
+      />
       <PageWrapperComponent>
         <View style={styles.contentWrapper}>
           <View>
-            <View style={styles.content}>
-              <TextInputComponent
-                placeholder="Input Your Device ID"
-                onChangeText={(value) => setDeviceId(value)}
-                value={deviceId}
-              />
-            </View>
+            <View style={styles.divider} />
             {deviceData !== null ? (
               <CardComponent>
                 <View style={styles.listContentWrapper}>
@@ -122,42 +115,15 @@ export const CreateReportScreen = ({navigation}) => {
           </View>
         </View>
         <View style={styles.buttonWrapper}>
+          <ButtonComponent onPress={checkDevice} title="Check Data" />
+          <View style={styles.divider} />
           {deviceData !== null ? (
-            <ButtonComponent onPress={navigateToSetUpReport} title="Next" />
+            <ButtonComponent onPress={() => null} title="Next" />
           ) : (
             <></>
           )}
-          <View style={styles.divider} />
-          <ButtonComponent
-            onPress={() => {
-              setIsCameraActive(true);
-            }}
-            title="Use Barcode Scanner "
-          />
-          <View style={styles.divider} />
-          <ButtonComponent onPress={checkDevice} title="Check Device" />
         </View>
       </PageWrapperComponent>
-      <Modal visible={isCameraActive} style={styles.cameraWrapper}>
-        <RNCamera
-          style={styles.preview}
-          type={RNCamera.Constants.Type.back}
-          flashMode={RNCamera.Constants.FlashMode.on}
-          androidCameraPermissionOptions={{
-            title: 'Permission to use camera',
-            message: 'We need your permission to use your camera',
-            buttonPositive: 'Ok',
-            buttonNegative: 'Cancel',
-          }}
-          androidRecordAudioPermissionOptions={{
-            title: 'Permission to use audio recording',
-            message: 'We need your permission to use your audio',
-            buttonPositive: 'Ok',
-            buttonNegative: 'Cancel',
-          }}
-          onBarCodeRead={onBarcodeDetected}
-        />
-      </Modal>
       <LoadingComponent isLoading={isLoading} />
     </SafeAreaView>
   );

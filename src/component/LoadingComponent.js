@@ -1,6 +1,8 @@
+import {Spinner} from '@ui-kitten/components';
 import React from 'react';
-import {Modal, View, Text, Spinner, StyleSheet} from 'react-native';
-import Color from 'mbk_app/constants/Color';
+import {Modal, View, Text, StyleSheet} from 'react-native';
+import Color from 'src/constants/Color';
+
 export const LoadingComponent = (props) => (
   <Modal
     animationType="slide"

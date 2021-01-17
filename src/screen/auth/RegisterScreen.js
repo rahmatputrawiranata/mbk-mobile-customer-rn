@@ -8,16 +8,16 @@ import {
   Image,
 } from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
-import {ButtonComponent} from 'mbk_app/component/ButtonComponent';
-import {TextInputComponent} from 'mbk_app/component/forms/TextInputComponent';
-import {SelectComponent} from 'mbk_app/component/forms/SelectComponent';
-import AuthContext from 'mbk_app/utils/AuthContext';
+import {ButtonComponent} from 'src/component/ButtonComponent';
+import {TextInputComponent} from 'src/component/forms/TextInputComponent';
+import {SelectComponent} from 'src/component/forms/SelectComponent';
+import AuthContext from 'src/utils/AuthContext';
 import {ScrollView} from 'react-native-gesture-handler';
 import {
   ModalSelectComponent,
   ModalOptionComponent,
-} from 'mbk_app/component/forms/ModalSelectComponent';
-import {requestPublic} from 'mbk_app/helper/request';
+} from 'src/component/forms/ModalSelectComponent';
+import {requestPublic} from 'src/helper/request';
 import Snackbar from 'react-native-snackbar';
 const screen = Dimensions.get('window');
 
@@ -164,7 +164,7 @@ export const RegisterScreen = ({navigation}) => {
         <View style={styles.container}>
           <View style={styles.logoWrapper}>
             <Image
-              source={require('mbk_app/assets/images/logo.png')}
+              source={require('src/assets/images/logo.png')}
               style={styles.logo}
               resizeMode="contain"
             />

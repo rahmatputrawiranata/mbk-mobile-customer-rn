@@ -7,7 +7,7 @@ import {
   TouchableOpacity,
   TouchableWithoutFeedback,
 } from 'react-native';
-import Color from 'mbk_app/constants/Color';
+import Color from 'src/constants/Color';
 import {Icon} from '@ui-kitten/components';
 
 export const ModalOptionComponent = (props) => {

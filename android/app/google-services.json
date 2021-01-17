@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "336901189510",
+    "project_id": "yunip-iot",
+    "storage_bucket": "yunip-iot.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:336901189510:android:485ce3acf9c369a4f0c607",
+        "android_client_info": {
+          "package_name": "id.yunip.mbksupportcustomer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "336901189510-cdcsnkqng2pc7dohvu4kj1hbe5g0bcnm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAm28jgopRlhbJN-FxcnAkeTk8gHRKj2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "336901189510-cdcsnkqng2pc7dohvu4kj1hbe5g0bcnm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

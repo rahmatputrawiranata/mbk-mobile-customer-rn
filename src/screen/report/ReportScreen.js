@@ -1,10 +1,10 @@
 import React from 'react';
 import {Text, View, StyleSheet} from 'react-native';
 import {Icon} from '@ui-kitten/components';
-import {PageWrapperComponent} from 'mbk_app/component/PageWrapperComponent';
+import {PageWrapperComponent} from 'src/component/PageWrapperComponent';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import Color from '../../constants/Color';
-import {HeaderBackComponent} from 'mbk_app/component/HeaderBackComponent';
+import {HeaderBackComponent} from 'src/component/HeaderBackComponent';
 
 const CardList = (props) => (
   <View style={styles.cardWrapper}>

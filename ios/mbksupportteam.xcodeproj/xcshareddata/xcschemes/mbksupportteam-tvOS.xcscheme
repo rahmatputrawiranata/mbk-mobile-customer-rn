@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-               BuildableName = "mbksupportteam-tvOS.app"
-               BlueprintName = "mbksupportteam-tvOS"
-               ReferencedContainer = "container:mbksupportteam.xcodeproj">
+               BuildableName = "mbsupportcustomer-tvOS.app"
+               BlueprintName = "mbsupportcustomer-tvOS"
+               ReferencedContainer = "container:mbsupportcustomer.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "2D02E48F1E0B4A5D006451C7"
-               BuildableName = "mbksupportteam-tvOSTests.xctest"
-               BlueprintName = "mbksupportteam-tvOSTests"
-               ReferencedContainer = "container:mbksupportteam.xcodeproj">
+               BuildableName = "mbsupportcustomer-tvOSTests.xctest"
+               BlueprintName = "mbsupportcustomer-tvOSTests"
+               ReferencedContainer = "container:mbsupportcustomer.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -55,9 +55,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "mbksupportteam-tvOS.app"
-            BlueprintName = "mbksupportteam-tvOS"
-            ReferencedContainer = "container:mbksupportteam.xcodeproj">
+            BuildableName = "mbsupportcustomer-tvOS.app"
+            BlueprintName = "mbsupportcustomer-tvOS"
+            ReferencedContainer = "container:mbsupportcustomer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -72,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "2D02E47A1E0B4A5D006451C7"
-            BuildableName = "mbksupportteam-tvOS.app"
-            BlueprintName = "mbksupportteam-tvOS"
-            ReferencedContainer = "container:mbksupportteam.xcodeproj">
+            BuildableName = "mbsupportcustomer-tvOS.app"
+            BlueprintName = "mbsupportcustomer-tvOS"
+            ReferencedContainer = "container:mbsupportcustomer.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

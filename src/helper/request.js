@@ -1,5 +1,5 @@
 import AsyncStorage from '@react-native-async-storage/async-storage';
-import BaseUrl from 'mbk_app/constants/BaseUrl';
+import BaseUrl from 'src/constants/BaseUrl';
 import Snackbar from 'react-native-snackbar';
 
 export const request = async (param, method = 'GET', data = null) => {
@@ -23,11 +23,11 @@ export const request = async (param, method = 'GET', data = null) => {
     }
 
     if (json.status !== 'success') {
-      return Snackbar.show({
-        text: json.message,
-        duration: Snackbar.LENGTH_SHORT,
-        backgroundColor: 'red',
-      });
+      // return Snackbar.show({
+      //   text: json.message,
+      //   duration: Snackbar.LENGTH_SHORT,
+      //   backgroundColor: 'red',
+      // });
     }
 
     return json;
