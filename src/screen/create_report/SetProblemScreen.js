@@ -8,10 +8,12 @@ import Color from 'src/constants/Color';
 import {request} from 'src/helper/request';
 import {LoadingComponent} from 'src/component/LoadingComponent';
 import {CardComponent} from 'src/component/CardComponent';
+import {RespondComponent} from 'src/component/RespondComponent';
 
 export const SetProblemScreen = ({route, navigation}) => {
   const [isLoading, setIsLoading] = React.useState(false);
   const [deviceData, setDeviceData] = React.useState(null);
+  const [respondVisible, setRespondVisible] = React.useState(false);
 
   const navigateBack = () => {
     navigation.goBack();
@@ -55,35 +57,6 @@ export const SetProblemScreen = ({route, navigation}) => {
     initData();
   }, [device_code, navigateBacks]);
 
-  const checkDevice = async () => {
-    setIsLoading(true);
-    request(
-      '/report/check-device',
-      'POST',
-      JSON.stringify({
-        device_code: device_code,
-      }),
-    )
-      .then((response) => {
-        setDeviceData(response.data);
-        setIsLoading(false);
-      })
-      .catch((err) => {
-        console.log(err);
-        Alert.alert(
-          'Device Code Not Valid',
-          'Please use registered device',
-          [
-            {
-              text: 'Back To Scanner',
-              onPress: navigateBack,
-            },
-          ],
-          {cancelable: false},
-        );
-      });
-  };
-
   return (
     <SafeAreaView style={styles.wrapper}>
       <HeaderBackComponent
@@ -115,8 +88,6 @@ export const SetProblemScreen = ({route, navigation}) => {
           </View>
         </View>
         <View style={styles.buttonWrapper}>
-          <ButtonComponent onPress={checkDevice} title="Check Data" />
-          <View style={styles.divider} />
           {deviceData !== null ? (
             <ButtonComponent onPress={() => null} title="Next" />
           ) : (
@@ -125,6 +96,12 @@ export const SetProblemScreen = ({route, navigation}) => {
         </View>
       </PageWrapperComponent>
       <LoadingComponent isLoading={isLoading} />
+      <RespondComponent
+        isSuccess={true}
+        visible={true}
+        onPress={() => null}
+        title="Close Modal"
+      />
     </SafeAreaView>
   );
 };
