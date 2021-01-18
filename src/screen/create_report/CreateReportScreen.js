@@ -30,7 +30,7 @@ export const CreateReportScreen = ({navigation}) => {
   };
 
   const checkDevice = async () => {
-    if(!deviceId) {
+    if (!deviceId) {
       return Snackbar.show({
         text: 'please fill device id',
         duration: Snackbar.LENGTH_SHORT,
