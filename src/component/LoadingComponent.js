@@ -5,7 +5,7 @@ import Color from 'src/constants/Color';
 
 export const LoadingComponent = (props) => (
   <Modal
-    animationType="slide"
+    animationType="fade"
     transparent={true}
     visible={props.isLoading}
     onRequestClose={() => null}>

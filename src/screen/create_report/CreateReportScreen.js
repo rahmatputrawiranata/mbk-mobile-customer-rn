@@ -46,16 +46,15 @@ export const CreateReportScreen = ({navigation}) => {
       }),
     )
       .then((response) => {
-        console.log(response);
+        console.log('success', response);
         setDeviceData(response.data);
         setIsLoading(false);
       })
       .catch((err) => {
-        console.log(err);
         setDeviceData(null);
         setIsLoading(false);
         return Snackbar.show({
-          text: err.message,
+          text: err,
           duration: Snackbar.LENGTH_SHORT,
           backgroundColor: 'red',
         });
