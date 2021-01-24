@@ -2,7 +2,7 @@ import React from 'react';
 import {View, StyleSheet} from 'react-native';
 
 export const CardComponent = (props) => {
-  return <View style={styles.wrapper}>{props.children}</View>;
+  return <View style={[styles.wrapper, props.style]}>{props.children}</View>;
 };
 
 const styles = StyleSheet.create({

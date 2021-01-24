@@ -5,13 +5,14 @@ import {ReportScreen} from 'src/screen/report/ReportScreen';
 import {ProfileScreen} from 'src/screen/profile/ProfileScreen';
 import {CreateReportScreen} from 'src/screen/create_report/CreateReportScreen';
 import {SetProblemScreen} from 'src/screen/create_report/SetProblemScreen';
+import {ReportDetailScreen} from 'src/screen/report/ReportDetailScreen';
 
 const {Navigator, Screen} = createStackNavigator();
 
 const HomeNavigator = () => (
   <Navigator headerMode="none">
     <Screen name="Home" component={HomeScreen} />
-    <Screen name="Report" component={ReportScreen} />
+    <Screen name="ReportNavigator" component={ReportNavigator} />
     <Screen name="Profile" component={ProfileScreen} />
     <Screen name="CreateReportNavigator" component={CreateReportNavigator} />
   </Navigator>
@@ -23,6 +24,13 @@ const CreateReportNavigator = () => (
   <Navigator headerMode="none">
     <Screen name="CreateReport" component={CreateReportScreen} />
     <Screen name="SetProblem" component={SetProblemScreen} />
+  </Navigator>
+);
+
+const ReportNavigator = () => (
+  <Navigator headerMode="none">
+    <Screen name="Report" component={ReportScreen} />
+    <Screen name="ReportDetail" component={ReportDetailScreen} />
   </Navigator>
 );
 

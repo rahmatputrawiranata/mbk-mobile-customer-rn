@@ -4,4 +4,5 @@ export default {
   darkRed: '#932D54',
   dark: '#000000',
   light: '#FFFFFF',
+  note: '#393e46',
 };

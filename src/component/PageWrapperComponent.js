@@ -3,7 +3,7 @@ import {View, StyleSheet} from 'react-native';
 import Color from '../constants/Color';
 export const PageWrapperComponent = (props) => (
   <View style={styles.wrapper}>
-    <View style={styles.content}>{props.children}</View>
+    <View style={[styles.content, props.wrapperStyle]}>{props.children}</View>
   </View>
 );
 

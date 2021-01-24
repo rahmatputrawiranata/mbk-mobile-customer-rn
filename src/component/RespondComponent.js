@@ -8,10 +8,7 @@ export const RespondComponent = (props) => {
     : 'src/assets/images/fail.png';
   return (
     <Modal style={styles.wrapper} animationType="slide" visible={props.visible}>
-      <Image
-        style={styles.image}
-        source={require('src/assets/images/success.png')}
-      />
+      <Image style={styles.image} source={imageSource} />
       <View style={styles.buttonWrapper}>
         <ButtonComponent title={props.title} onPress={props.onPress} />
       </View>

@@ -1,28 +1,38 @@
 import React from 'react';
-import {Text, View, StyleSheet} from 'react-native';
+import {
+  Text,
+  View,
+  StyleSheet,
+  TouchableWithoutFeedback,
+  FlatList,
+} from 'react-native';
 import {Icon} from '@ui-kitten/components';
 import {PageWrapperComponent} from 'src/component/PageWrapperComponent';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import Color from '../../constants/Color';
 import {HeaderBackComponent} from 'src/component/HeaderBackComponent';
+import SkeletonPlaceholder from 'react-native-skeleton-placeholder';
+import {request} from 'src/helper/request';
+import moment from 'moment';
 
-const CardList = (props) => (
-  <View style={styles.cardWrapper}>
-    <View style={styles.contentCardWrapper}>
-      <>
-        <View style={styles.headerWrapper}>
-          <Text style={styles.textHeader}>Device 0918239081230</Text>
-          <Text style={styles.textDate}>01-01-2020</Text>
+const LoadingContent = (props) => (
+  <View style={styles.cardWrapperSkeleton}>
+    <SkeletonPlaceholder>
+      <SkeletonPlaceholder.Item>
+        <View style={styles.skeletonHeader}>
+          <SkeletonPlaceholder.Item height={18} width={160} borderRadius={8} />
+          <SkeletonPlaceholder.Item height={18} width={80} borderRadius={8} />
         </View>
-        <Text style={styles.textStatus}>Pending</Text>
-      </>
-      <View style={styles.contenrLocationCard}>
-        <Icon name="pin" style={styles.iconLocation} fill={Color.dark} />
-        <Text style={styles.textLocation} numberOfLines={1}>
-          Cabang Garuda, Surabaya , Jawa Timut, Jakarta asdsa dsad asd sad ad{' '}
-        </Text>
-      </View>
-    </View>
+
+        <SkeletonPlaceholder.Item
+          height={18}
+          width={80}
+          borderRadius={8}
+          marginBottom={5}
+        />
+        <SkeletonPlaceholder.Item height={18} width={250} borderRadius={8} />
+      </SkeletonPlaceholder.Item>
+    </SkeletonPlaceholder>
   </View>
 );
 
@@ -31,12 +41,82 @@ export const ReportScreen = ({navigation}) => {
     navigation.goBack();
   };
 
+  const navigateToReportDetail = (data) => {
+    navigation.navigate('ReportDetail', {
+      data: data,
+    });
+  };
+
+  const [isLoading, setIsLoading] = React.useState(true);
+  const [listData, setListData] = React.useState([]);
+
+  const CardList = ({item}) => (
+    <View style={styles.cardWrapper}>
+      <TouchableWithoutFeedback onPress={() => navigateToReportDetail(item)}>
+        <View style={styles.contentCardWrapper}>
+          <>
+            <View style={styles.headerWrapper}>
+              <Text style={styles.textHeader}>{item.ticket_no}</Text>
+              <Text style={styles.textDate}>
+                {moment(new Date(item.created_at)).format('YYYY-MM-DD')}
+              </Text>
+            </View>
+            <Text style={styles.textStatus}>
+              {typeof item.report_progress_active.value !== 'undefined' &&
+              item.report_progress_active.value !== null
+                ? item.report_progress_active.value
+                : ''}
+            </Text>
+          </>
+          <View style={styles.contenrLocationCard}>
+            <Icon name="pin" style={styles.iconLocation} fill={Color.dark} />
+            <Text style={styles.textLocation} numberOfLines={1}>
+              {item.branch.name ?? ''}, {item.branch.address ?? ''}
+            </Text>
+          </View>
+        </View>
+      </TouchableWithoutFeedback>
+    </View>
+  );
+
+  React.useEffect(() => {
+    async function getData() {
+      setIsLoading(true);
+      request(
+        '/report/all?' +
+          new URLSearchParams({
+            limit: 10,
+          }),
+        'GET',
+      )
+        .then((reponse) => {
+          console.log(reponse.data.data);
+          setListData(reponse.data.data);
+          setIsLoading(false);
+        })
+        .catch((err) => {
+          setIsLoading(false);
+          console.log(err);
+        });
+    }
+    getData();
+  }, []);
+
   return (
     <SafeAreaView style={styles.wrapper}>
       <HeaderBackComponent title="Report" navigateBack={navigateBack} />
-      <PageWrapperComponent>
+      <PageWrapperComponent wrapperStyle={styles.wrapperPageStyles}>
         <View style={styles.contentWrapper}>
-          <CardList />
+          {isLoading ? (
+            <LoadingContent />
+          ) : (
+            <FlatList
+              contentContainerStyle={styles.scrollContainer}
+              data={listData}
+              renderItem={CardList}
+              keyExtractor={(item) => item.id}
+            />
+          )}
         </View>
       </PageWrapperComponent>
     </SafeAreaView>
@@ -47,16 +127,43 @@ const styles = StyleSheet.create({
   wrapper: {
     flex: 1,
   },
+  wrapperPageStyles: {
+    paddingHorizontal: 0,
+  },
   contentWrapper: {
     paddingTop: 20,
   },
-  cardWrapper: {
-    height: 112,
-    paddingVertical: 15,
+  cardWrapperSkeleton: {
+    paddingVertical: 16,
     backgroundColor: Color.light,
-    borderRadius: 22,
-    paddingHorizontal: 22,
-    marginBottom: 10,
+    borderRadius: 16,
+    paddingHorizontal: 16,
+    marginBottom: 8,
+    shadowColor: '#000',
+    marginHorizontal: 20,
+    shadowOffset: {
+      width: 0,
+      height: 6,
+    },
+    shadowOpacity: 0.37,
+    shadowRadius: 7.49,
+    elevation: 12,
+  },
+  scrollContainer: {
+    padding: 20,
+  },
+  skeletonHeader: {
+    justifyContent: 'space-between',
+    flexDirection: 'row',
+    marginBottom: 30,
+  },
+  cardWrapper: {
+    height: 128,
+    paddingVertical: 16,
+    backgroundColor: Color.light,
+    borderRadius: 16,
+    paddingHorizontal: 16,
+    marginBottom: 8,
     shadowColor: '#000',
     shadowOffset: {
       width: 0,

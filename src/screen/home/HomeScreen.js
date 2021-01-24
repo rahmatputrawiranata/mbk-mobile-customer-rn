@@ -18,7 +18,7 @@ const menuBottomHeight = 150;
 
 export const HomeScreen = ({navigation}) => {
   const navigateReport = () => {
-    navigation.navigate('Report');
+    navigation.navigate('ReportNavigator');
   };
 
   const navigateProfile = () => {
