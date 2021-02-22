@@ -51,7 +51,7 @@ export const ReportScreen = ({navigation}) => {
   const [listData, setListData] = React.useState([]);
 
   const CardList = ({item}) => (
-    <View style={styles.cardWrapper}>
+    <View style={styles.cardWrapper} key={item.id}>
       <TouchableWithoutFeedback onPress={() => navigateToReportDetail(item)}>
         <View style={styles.contentCardWrapper}>
           <>
@@ -90,13 +90,11 @@ export const ReportScreen = ({navigation}) => {
         'GET',
       )
         .then((reponse) => {
-          console.log(reponse.data.data);
           setListData(reponse.data.data);
           setIsLoading(false);
         })
         .catch((err) => {
           setIsLoading(false);
-          console.log(err);
         });
     }
     getData();
@@ -114,7 +112,7 @@ export const ReportScreen = ({navigation}) => {
               contentContainerStyle={styles.scrollContainer}
               data={listData}
               renderItem={CardList}
-              keyExtractor={(item) => item.id}
+              // keyExtractor={(item) => item.id}
             />
           )}
         </View>

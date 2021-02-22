@@ -13,7 +13,7 @@ import {RespondComponent} from 'src/component/RespondComponent';
 export const SetProblemScreen = ({route, navigation}) => {
   const [isLoading, setIsLoading] = React.useState(false);
   const [deviceData, setDeviceData] = React.useState(null);
-  const [respondVisible, setRespondVisible] = React.useState(false);
+  // const [respondVisible, setRespondVisible] = React.useState(false);
 
   const navigateBack = () => {
     navigation.goBack();
@@ -40,7 +40,6 @@ export const SetProblemScreen = ({route, navigation}) => {
           setIsLoading(false);
         })
         .catch((err) => {
-          console.log(err);
           Alert.alert(
             'Device Code Not Valid',
             'Please use registered device',

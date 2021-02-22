@@ -87,9 +87,7 @@ export const RegisterScreen = ({navigation}) => {
         data: data.data,
         modalOpen: true,
       });
-    } catch (err) {
-      console.log('err', err);
-    }
+    } catch (err) {}
   };
 
   const openProvinceModal = async () => {
@@ -109,9 +107,7 @@ export const RegisterScreen = ({navigation}) => {
         data: data.data,
         modalOpen: true,
       });
-    } catch (err) {
-      console.log('err', err);
-    }
+    } catch (err) {}
   };
 
   const openCityModal = async () => {
@@ -131,9 +127,7 @@ export const RegisterScreen = ({navigation}) => {
         data: data.data,
         modalOpen: true,
       });
-    } catch (err) {
-      console.log('err', err);
-    }
+    } catch (err) {}
   };
 
   const openBranchModal = async () => {
@@ -153,9 +147,7 @@ export const RegisterScreen = ({navigation}) => {
         data: data.data,
         modalOpen: true,
       });
-    } catch (err) {
-      console.log('err', err);
-    }
+    } catch (err) {}
   };
 
   return (

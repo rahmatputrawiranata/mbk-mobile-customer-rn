@@ -46,7 +46,6 @@ export const CreateReportScreen = ({navigation}) => {
       }),
     )
       .then((response) => {
-        console.log('success', response);
         setDeviceData(response.data);
         setIsLoading(false);
       })
@@ -62,7 +61,6 @@ export const CreateReportScreen = ({navigation}) => {
   };
 
   const onBarcodeDetected = (e) => {
-    console.log(e);
     if (!isFocused) {
       setIsFocused(true);
       Alert.alert(

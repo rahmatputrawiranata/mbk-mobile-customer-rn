@@ -30,16 +30,17 @@ export const ReportDetailScreen = ({route, navigation}) => {
         .then((res) => {
           setDataReport(res.data);
         })
-        .catch((err) => {
-          console.log('error', err);
-        });
+        .catch((err) => {});
     }
     getData();
   }, [data]);
 
   return (
     <SafeAreaView style={styles.wrapper}>
-      <HeaderBackComponent title="Report " navigateBack={navigateBack} />
+      <HeaderBackComponent
+        title={'Report ' + dataReport.ticket_no}
+        navigateBack={navigateBack}
+      />
       <PageWrapperComponent wrapperStyle={styles.wrapperPageStyles}>
         <View style={styles.lineBreak} />
         <ScrollView>
@@ -63,10 +64,9 @@ export const ReportDetailScreen = ({route, navigation}) => {
           </CardComponent>
           <View style={styles.lineBreak} />
           <View style={styles.contentWrapper}>
-            <TimeLineComponent />
-            <TimeLineComponent />
-            <TimeLineComponent />
-            <TimeLineComponent />
+            {dataReport.report_progress.map((item, index) => {
+              return <TimeLineComponent key={item.id} dataItem={item} />;
+            })}
           </View>
           <View style={styles.lineBreak} />
           <View style={styles.lineBreak} />

@@ -5,18 +5,16 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import {PageWrapperComponent} from 'src/component/PageWrapperComponent';
 import {ButtonComponent} from 'src/component/ButtonComponent';
 import Color from 'src/constants/Color';
-import AuthContext from 'src/utils/AuthContext';
-import {request} from 'src/helper/request';
+import {removeAuthToken} from 'src/helper/token';
+import {useSelector} from 'react-redux';
 
 export const ProfileScreen = ({navigation}) => {
-  const {signOut} = React.useContext(AuthContext);
-  const [user, setUser] = React.useState([]);
-  React.useEffect(() => {
-    request('/profile', 'GET').then((res) => {
-      console.log(res.data);
-      setUser(res.data);
-    });
-  }, []);
+  // const [user, setUser] = React.useState([]);
+  const user = useSelector((state) => state.user.userdata);
+
+  const signOut = async () => {
+    await removeAuthToken;
+  };
 
   const navigateBack = () => {
     navigation.goBack();
@@ -53,7 +51,25 @@ export const ProfileScreen = ({navigation}) => {
             <View style={styles.listContentWrapper}>
               <Text style={styles.titleStyleContent}>Branch</Text>
               <Text style={styles.textContentStyle}>
-                {user ? user.branch : ''}
+                {user ? user.branch.name : ''}
+              </Text>
+            </View>
+            <View style={styles.listContentWrapper}>
+              <Text style={styles.titleStyleContent}>City</Text>
+              <Text style={styles.textContentStyle}>
+                {user ? user.branch.city.name : ''}
+              </Text>
+            </View>
+            <View style={styles.listContentWrapper}>
+              <Text style={styles.titleStyleContent}>Province</Text>
+              <Text style={styles.textContentStyle}>
+                {user ? user.branch.city.region.name : ''}
+              </Text>
+            </View>
+            <View style={styles.listContentWrapper}>
+              <Text style={styles.titleStyleContent}>Country</Text>
+              <Text style={styles.textContentStyle}>
+                {user ? user.branch.city.region.country.name : ''}
               </Text>
             </View>
           </View>

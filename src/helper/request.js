@@ -89,7 +89,5 @@ export const requestPublic = async (param, method = 'GET', data = null) => {
     }
 
     return json;
-  } catch (error) {
-    console.log(JSON.stringify(error));
-  }
+  } catch (error) {}
 };

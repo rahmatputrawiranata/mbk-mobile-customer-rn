@@ -1,13 +1,14 @@
 import React from 'react';
-import {TouchableWithoutFeedback, Text, View, StyleSheet} from 'react-native';
+import {TouchableOpacity, Text, View, StyleSheet} from 'react-native';
+// import { TouchableOpacity } from 'react-native-gesture-handler';
 import Color from 'src/constants/Color';
 
 export const ButtonComponent = (props) => (
-  <TouchableWithoutFeedback onPress={props.onPress}>
+  <TouchableOpacity onPress={props.onPress}>
     <View style={styles.buttonWrapper}>
       <Text style={styles.titleStyle}>{props.title}</Text>
     </View>
-  </TouchableWithoutFeedback>
+  </TouchableOpacity>
 );
 
 const styles = StyleSheet.create({

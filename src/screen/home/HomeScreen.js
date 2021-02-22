@@ -9,7 +9,7 @@ import {
 } from 'react-native';
 import Color from '../../constants/Color';
 import IconMenuComponent from 'src/component/IconMenuComponent';
-
+import {useSelector} from 'react-redux';
 const screen = Dimensions.get('window');
 
 const headerSpace = 50;
@@ -20,6 +20,8 @@ export const HomeScreen = ({navigation}) => {
   const navigateReport = () => {
     navigation.navigate('ReportNavigator');
   };
+
+  const user = useSelector((state) => state.user.userdata);
 
   const navigateProfile = () => {
     navigation.navigate('Profile');
@@ -34,7 +36,7 @@ export const HomeScreen = ({navigation}) => {
       <View style={styles.wrapper}>
         <View style={styles.headerWrapper}>
           <View style={styles.header}>
-            <Text style={styles.headerTextStyle}>Hi !</Text>
+            <Text style={styles.headerTextStyle}>Hi {user.full_name} !</Text>
           </View>
         </View>
         <View style={styles.bannerWrapper}>

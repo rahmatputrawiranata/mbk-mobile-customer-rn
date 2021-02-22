@@ -1,18 +1,71 @@
+import AsyncStorage from '@react-native-async-storage/async-storage';
 import React from 'react';
 import {View, Text, Dimensions, StyleSheet, Image} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
 import {ButtonComponent} from 'src/component/ButtonComponent';
 import {TextInputComponent} from 'src/component/forms/TextInputComponent';
+import {request} from 'src/helper/request';
 const screen = Dimensions.get('window');
-import AuthContext from 'src/utils/AuthContext';
+//Redux
+import {updateUser} from '../../actions/userActions';
+import {useDispatch} from 'react-redux';
+import Snackbar from 'react-native-snackbar';
 
 export const LoginScreen = ({navigation}) => {
+  const dispatch = useDispatch();
+
   const [userName, onChangeUsernmae] = React.useState('');
   const [password, onChangePassword] = React.useState('');
-  const {signIn} = React.useContext(AuthContext);
-
+  // const {signIn} = React.useContext(AuthContext);
   const requestLogin = async () => {
-    signIn({username: userName, password: password});
+    if (!userName) {
+      return Snackbar.show({
+        text: 'Username required',
+        duration: Snackbar.LENGTH_SHORT,
+        backgroundColor: 'red',
+      });
+    }
+
+    if (!password) {
+      return Snackbar.show({
+        text: 'Password required',
+        duration: Snackbar.LENGTH_SHORT,
+        backgroundColor: 'red',
+      });
+    }
+    request(
+      '/auth/login',
+      'POST',
+      JSON.stringify({
+        username: userName,
+        password: password,
+      }),
+    )
+      .then((response) => {
+        let token = AsyncStorage.setItem(
+          'userToken',
+          response.data.access_token,
+        );
+        if (token) {
+          requestProfile();
+        }
+      })
+      .catch((err) => {
+        return Snackbar.show({
+          text: err,
+          duration: Snackbar.LENGTH_SHORT,
+          backgroundColor: 'red',
+        });
+      });
+    // signIn({username: userName, password: password});
+  };
+
+  const requestProfile = async () => {
+    request('/profile')
+      .then((response) => {
+        dispatch(updateUser(response.data));
+      })
+      .catch((err) => {});
   };
 
   const navigateRegister = () => {
