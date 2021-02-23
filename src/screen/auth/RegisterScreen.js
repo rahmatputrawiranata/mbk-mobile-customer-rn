@@ -11,14 +11,19 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import {ButtonComponent} from 'src/component/ButtonComponent';
 import {TextInputComponent} from 'src/component/forms/TextInputComponent';
 import {SelectComponent} from 'src/component/forms/SelectComponent';
-import AuthContext from 'src/utils/AuthContext';
 import {ScrollView} from 'react-native-gesture-handler';
 import {
   ModalSelectComponent,
   ModalOptionComponent,
 } from 'src/component/forms/ModalSelectComponent';
-import {requestPublic} from 'src/helper/request';
+import {request, requestPublic} from 'src/helper/request';
 import Snackbar from 'react-native-snackbar';
+
+//Redux
+import {updateUser} from '../../actions/userActions';
+import {useDispatch} from 'react-redux';
+import AsyncStorage from '@react-native-async-storage/async-storage';
+
 const screen = Dimensions.get('window');
 
 export const RegisterScreen = ({navigation}) => {
@@ -28,6 +33,8 @@ export const RegisterScreen = ({navigation}) => {
   const [fullName, onChangeFullName] = React.useState('');
   const [password, onChangePassword] = React.useState('');
   const [cPassword, onChangeCPassword] = React.useState('');
+
+  const dispatch = useDispatch();
 
   const [countrySelectedData, setCountrySelectedData] = React.useState({
     modalOpen: false,
@@ -61,18 +68,50 @@ export const RegisterScreen = ({navigation}) => {
     data: [],
   });
 
-  const {signUp} = React.useContext(AuthContext);
-
   const requestSignUp = async () => {
-    signUp({
-      username: userName,
-      password: password,
-      email: email,
-      phone: phone,
-      full_name: fullName,
-      c_password: cPassword,
-      branch_id: branchSelectedData.selectedId,
-    });
+    request(
+      '/auth/register',
+      'POST',
+      JSON.stringify({
+        username: userName,
+        password: password,
+        email: email,
+        phone: phone,
+        full_name: fullName,
+        c_password: cPassword,
+        branch_id: branchSelectedData.selectedId,
+      }),
+    )
+      .then((response) => {
+        let token = AsyncStorage.setItem(
+          'userToken',
+          response.data.access_token,
+        );
+        if (token) {
+          requestProfile();
+        }
+      })
+      .catch((err) => {
+        return Snackbar.show({
+          text: err,
+          duration: Snackbar.LENGTH_SHORT,
+          backgroundColor: 'red',
+        });
+      });
+  };
+
+  const requestProfile = async () => {
+    request('/profile')
+      .then((response) => {
+        dispatch(updateUser(response.data));
+      })
+      .catch((err) => {
+        return Snackbar.show({
+          text: err,
+          duration: Snackbar.LENGTH_SHORT,
+          backgroundColor: 'red',
+        });
+      });
   };
 
   const navigateLogin = () => {

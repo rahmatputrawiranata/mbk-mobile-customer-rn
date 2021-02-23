@@ -55,7 +55,7 @@ export const request = (param, method = 'GET', data = null) => {
         resolve(json);
       })
       .catch((err) => {
-        reject(err);
+        reject(err.message);
       });
   });
 };

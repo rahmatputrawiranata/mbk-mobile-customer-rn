@@ -51,6 +51,7 @@ export const LoginScreen = ({navigation}) => {
         }
       })
       .catch((err) => {
+        console.log('error', err);
         return Snackbar.show({
           text: err,
           duration: Snackbar.LENGTH_SHORT,
@@ -65,7 +66,13 @@ export const LoginScreen = ({navigation}) => {
       .then((response) => {
         dispatch(updateUser(response.data));
       })
-      .catch((err) => {});
+      .catch((err) => {
+        return Snackbar.show({
+          text: err,
+          duration: Snackbar.LENGTH_SHORT,
+          backgroundColor: 'red',
+        });
+      });
   };
 
   const navigateRegister = () => {

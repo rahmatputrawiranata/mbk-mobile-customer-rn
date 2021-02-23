@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "336901189510",
-    "project_id": "yunip-iot",
-    "storage_bucket": "yunip-iot.appspot.com"
+    "project_number": "525613106844",
+    "project_id": "mbksupportcustomer",
+    "storage_bucket": "mbksupportcustomer.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:336901189510:android:485ce3acf9c369a4f0c607",
+        "mobilesdk_app_id": "1:525613106844:android:5112466230ecda5e8a4f59",
         "android_client_info": {
           "package_name": "id.yunip.mbksupportcustomer"
         }
       },
       "oauth_client": [
         {
-          "client_id": "336901189510-cdcsnkqng2pc7dohvu4kj1hbe5g0bcnm.apps.googleusercontent.com",
+          "client_id": "525613106844-dej5sjbe38l0t1n4rj3h9vidugr433tp.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAAm28jgopRlhbJN-FxcnAkeTk8gHRKj2E"
+          "current_key": "AIzaSyDsrs0F26GGlKZEUvzgpTPwl8N-WP7fkEU"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "336901189510-cdcsnkqng2pc7dohvu4kj1hbe5g0bcnm.apps.googleusercontent.com",
+              "client_id": "525613106844-dej5sjbe38l0t1n4rj3h9vidugr433tp.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
