@@ -1,4 +1,4 @@
-import {UPDATE_USER} from '../actions/actionTypes';
+import {UPDATE_USER, REMOVE_USER} from '../actions/actionTypes';
 
 const initialState = {
   userData: {},
@@ -11,10 +11,16 @@ const updateUser = (state, action) => {
   return {...state, userdata: Object.assign({}, ud), loginStatus: ud ? 1 : 0};
 };
 
+const removeUser = (state) => {
+  return {...state, userdata: null, loginStatus: 0};
+};
+
 const userReducer = (state = initialState, action) => {
   switch (action.type) {
     case UPDATE_USER:
       return updateUser(state, action);
+    case REMOVE_USER:
+      return removeUser(state, action);
     default:
       return state;
   }

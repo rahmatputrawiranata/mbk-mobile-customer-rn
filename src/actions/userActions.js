@@ -1,4 +1,4 @@
-import {UPDATE_USER} from './actionTypes';
+import {UPDATE_USER, REMOVE_USER} from './actionTypes';
 
 const updateUser = (userdata) => {
   return {
@@ -7,4 +7,10 @@ const updateUser = (userdata) => {
   };
 };
 
-export {updateUser};
+const removeUser = () => {
+  return {
+    type: REMOVE_USER,
+  };
+};
+
+export {updateUser, removeUser};

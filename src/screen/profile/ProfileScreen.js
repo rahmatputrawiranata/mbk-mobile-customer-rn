@@ -5,15 +5,19 @@ import {SafeAreaView} from 'react-native-safe-area-context';
 import {PageWrapperComponent} from 'src/component/PageWrapperComponent';
 import {ButtonComponent} from 'src/component/ButtonComponent';
 import Color from 'src/constants/Color';
-import {removeAuthToken} from 'src/helper/token';
 import {useSelector} from 'react-redux';
+import {useDispatch} from 'react-redux';
+import {updateUser} from '../../actions/userActions';
+import AsyncStorage from '@react-native-async-storage/async-storage';
 
 export const ProfileScreen = ({navigation}) => {
   // const [user, setUser] = React.useState([]);
   const user = useSelector((state) => state.user.userdata);
+  const dispatch = useDispatch();
 
-  const signOut = async () => {
-    await removeAuthToken;
+  const signOut = () => {
+    AsyncStorage.removeItem('userToken');
+    dispatch(updateUser(null));
   };
 
   const navigateBack = () => {
@@ -48,28 +52,31 @@ export const ProfileScreen = ({navigation}) => {
               <Text>Email</Text>
               <Text>{user ? user.email : ''}</Text>
             </View>
+
             <View style={styles.listContentWrapper}>
               <Text style={styles.titleStyleContent}>Branch</Text>
               <Text style={styles.textContentStyle}>
-                {user ? user.branch.name : ''}
+                {user.branch ? user.branch.name : ''}
               </Text>
             </View>
             <View style={styles.listContentWrapper}>
               <Text style={styles.titleStyleContent}>City</Text>
               <Text style={styles.textContentStyle}>
-                {user ? user.branch.city.name : ''}
+                {user.branch?.city ? user.branch.city.name : ''}
               </Text>
             </View>
             <View style={styles.listContentWrapper}>
               <Text style={styles.titleStyleContent}>Province</Text>
               <Text style={styles.textContentStyle}>
-                {user ? user.branch.city.region.name : ''}
+                {user.branch?.city?.region ? user.branch.city.region.name : ''}
               </Text>
             </View>
             <View style={styles.listContentWrapper}>
               <Text style={styles.titleStyleContent}>Country</Text>
               <Text style={styles.textContentStyle}>
-                {user ? user.branch.city.region.country.name : ''}
+                {user.branch?.city?.region?.country
+                  ? user.branch.city.region.country.name
+                  : ''}
               </Text>
             </View>
           </View>

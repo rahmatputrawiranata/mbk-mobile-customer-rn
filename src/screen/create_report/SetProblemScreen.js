@@ -42,7 +42,7 @@ export const SetProblemScreen = ({route, navigation}) => {
         .catch((err) => {
           Alert.alert(
             'Device Code Not Valid',
-            'Please use registered device',
+            err,
             [
               {
                 text: 'Back To Scanner',
@@ -98,7 +98,7 @@ export const SetProblemScreen = ({route, navigation}) => {
       <RespondComponent
         isSuccess={true}
         visible={true}
-        onPress={() => null}
+        onPress={() => navigateBacks}
         title="Close Modal"
       />
     </SafeAreaView>
