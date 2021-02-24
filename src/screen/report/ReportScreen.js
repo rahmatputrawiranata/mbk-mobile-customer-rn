@@ -93,7 +93,7 @@ export const ReportScreen = ({navigation}) => {
           setListData(reponse.data.data);
           setIsLoading(false);
         })
-        .catch((err) => {
+        .catch(() => {
           setIsLoading(false);
         });
     }

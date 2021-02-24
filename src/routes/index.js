@@ -31,7 +31,9 @@ const Routes = (props) => {
       .then((response) => {
         dispatch(updateUser(response.data));
       })
-      .catch((err) => {});
+      .catch(() => {
+        dispatch(updateUser(null));
+      });
   };
 
   if (loginStatus === -1) {

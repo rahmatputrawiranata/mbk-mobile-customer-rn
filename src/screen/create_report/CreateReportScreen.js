@@ -50,13 +50,19 @@ export const CreateReportScreen = ({navigation}) => {
         setIsLoading(false);
       })
       .catch((err) => {
-        setDeviceData(null);
-        setIsLoading(false);
-        return Snackbar.show({
-          text: err,
-          duration: Snackbar.LENGTH_SHORT,
-          backgroundColor: 'red',
-        });
+        Promise.resolve()
+          .then(() => {
+            setIsLoading(false);
+          })
+          .then(() => {
+            setTimeout(() => {
+              Snackbar.show({
+                text: err,
+                duration: Snackbar.LENGTH_SHORT,
+                backgroundColor: 'red',
+              });
+            }, 1000);
+          });
       });
   };
 
@@ -99,20 +105,22 @@ export const CreateReportScreen = ({navigation}) => {
               />
             </View>
             {deviceData !== null ? (
-              <CardComponent>
-                <View style={styles.listContentWrapper}>
-                  <Text style={styles.titleStyleContent}>Device Code</Text>
-                  <Text style={styles.textContentStyle}>
-                    {deviceData.device_code}
-                  </Text>
-                </View>
-                <View style={styles.listContentWrapper}>
-                  <Text style={styles.titleStyleContent}>Device Model</Text>
-                  <Text style={styles.textContentStyle}>
-                    {deviceData.device_model}
-                  </Text>
-                </View>
-              </CardComponent>
+              <>
+                <CardComponent>
+                  <View style={styles.listContentWrapper}>
+                    <Text style={styles.titleStyleContent}>Device Code</Text>
+                    <Text style={styles.textContentStyle}>
+                      {deviceData.device_code}
+                    </Text>
+                  </View>
+                  <View style={styles.listContentWrapper}>
+                    <Text style={styles.titleStyleContent}>Device Model</Text>
+                    <Text style={styles.textContentStyle}>
+                      {deviceData.device_model}
+                    </Text>
+                  </View>
+                </CardComponent>
+              </>
             ) : (
               <></>
             )}
@@ -155,6 +163,7 @@ export const CreateReportScreen = ({navigation}) => {
           onBarCodeRead={onBarcodeDetected}
         />
       </Modal>
+
       <LoadingComponent isLoading={isLoading} />
     </SafeAreaView>
   );
@@ -220,5 +229,8 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'flex-end',
     alignItems: 'center',
+  },
+  formData: {
+    marginVertical: 20,
   },
 });

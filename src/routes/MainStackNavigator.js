@@ -24,6 +24,7 @@ const CreateReportNavigator = () => (
   <Navigator headerMode="none">
     <Screen name="CreateReport" component={CreateReportScreen} />
     <Screen name="SetProblem" component={SetProblemScreen} />
+    <Screen name="ReportDetail" component={ReportDetailScreen} />
   </Navigator>
 );
 

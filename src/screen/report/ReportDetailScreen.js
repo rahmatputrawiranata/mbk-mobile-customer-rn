@@ -30,7 +30,7 @@ export const ReportDetailScreen = ({route, navigation}) => {
         .then((res) => {
           setDataReport(res.data);
         })
-        .catch((err) => {});
+        .catch(() => {});
     }
     getData();
   }, [data]);
